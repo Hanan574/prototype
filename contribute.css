@@ -1,0 +1,20 @@
+.user {
+  text-align: center;
+  border: 2px solid rgb(163, 17, 17);
+  border-radius: 2pc;
+  color: darkgreen;
+  font-family: Arial, Helvetica, sans-serif;
+  font-stretch: expanded;
+  margin-left: 230px;
+  margin-right: 230px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-stretch: expanded;
+  margin: auto;
+  text-align: center;
+  color: darkgreen;
+  padding: 30px;
+}

@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="contribute.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>content contribution page</h1>
+    <div class="user">
+    <form action="/my-handling-form-page" method="post">
+  
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="user_name" /><br/>
+      <br/>
+      <label for="mail">Email:</label>
+      <input type="email" id="mail" name="user_email" /><br />
+      <br/>
+   
+      <label for="nationality">Ethnicity:</label>
+       <select id="ethnicity" name="user_ethnicity" required>   <br/>
+       <br/>
+      
+            <option value="usa">Amhara</option>
+            <option value="canada">Oromo</option>
+            <option value="uk">Tigray</option>
+            <option value="usa">Afar</option>
+            <option value="usa">somalia</option>
+            <option value="usa">wolayta</option>
+            <option value="usa">snnpr</option>
+            <option value="usa">gambella</option>
+            <option value="usa">gurage</option><br/>
+             </select><br/>
+       
+      <br/>
+
+      <label for="msg">Message:</label>
+      <textarea id="msg" name="user_message"></textarea><br />
+      <br />
+       <button id = "sub">submit</button>
+        </div>
+    
+
+  </body>
+  <script src="script.js"></script> 
+</html>
