@@ -10,36 +10,59 @@ const server = http.createServer((req, res) => {
   switch (req.url) {
     case "/":
       path += "index.html";
+      res.statusCode = 200;
       break;
-    case "/afar":
+    case "/afar.html":
       path += "afar.html";
+      res.statusCode = 200;
       break;
-    case "/amhara":
+    case "/amhara.html":
       path += "amhara.html";
+      res.statusCode = 200;
       break;
-    case "/gambella":
+    case "/gambella.html":
       path += "gambella.html";
+      res.statusCode = 200;
       break;
-    case "/gurage":
+    case "/gurage.html":
       path += "gurage.html";
+      res.statusCode = 200;
       break;
     case "/oromo.html":
       path += "oromo.html";
+      res.statusCode = 200;
       break;
-    case "/sidama":
+    case "/sidama.html":
       path += "sidama.html";
+      res.statusCode = 200;
       break;
-    case "/snnpr":
+    case "/snnpr.html":
       path += "snnpr.html";
+      res.statusCode = 200;
       break;
-    case "/somalia":
+    case "/somalia.html":
       path += "somalia.html";
+      res.statusCode = 200;
       break;
     case "/tigray.html":
       path += "tigray.html";
+      res.statusCode = 200;
       break;
-    case "/wolayta":
+    case "/wolayta.html":
       path += "wolayta.html";
+      res.statusCode = 200;
+      break;
+    case "/contribute.html":
+      path += "contribute.html";
+      res.statusCode = 200;
+      break;
+    case "/explore.html":
+      path += "explore.html";
+      res.statusCode = 200;
+      break;
+    default:
+      path += "404.html";
+      res.statusCode = 404;
       break;
   }
 
@@ -51,6 +74,7 @@ const server = http.createServer((req, res) => {
       res.end();
     } else {
       res.write(data);
+
       res.end();
     }
   });
