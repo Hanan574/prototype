@@ -1,12 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="gurage.css" />
-    <title>Document</title>
-  </head>
+  <%- include("./partials/head.ejs")%>
+  <%- include("./partials/nav.ejs")%>
   <body>
     <div class="topography">
       <p>
@@ -24,5 +19,6 @@
        The majority of Gurage District citizens are Muslim, with 51.02% of the population expressing that faith, while 41.91% are Ethiopian Orthodox, 5.79% Protestant, and 1.12% Catholic. According to the 1994 Ethiopian census, the self-proclaimed Gurage constitute around 2.7% of the Ethiopian population, or approximately 1.4 million individuals. The Gurage population is unknown since almost half of the population resides outside the Gurage area.</p>
     </div>
   </body>
-  <a href="/">Home</a>
+<a href="/"> <button>Back</button></a>
 </html>
+ <%- include("./partials/footer.ejs")%>

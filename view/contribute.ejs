@@ -1,17 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="contribute.css" />
-    <title>Document</title>
-  </head>
-  <body>
+  <%- include("./partials/head.ejs")%> <%- include("./partials/nav.ejs")%>
+  <!-- <body>
     <h1>content contribution page</h1>
     <div class="user">
-    <form action="/my-handling-form-page" method="post">
+    <form action="form" method="x">
   
       <label for="name">Name:</label>
       <input type="text" id="name" name="user_name" /><br/>
@@ -45,7 +38,9 @@
         </div>
     
 
-  </body>
-  <a href="/">Home</a>
-  <script src="script.js"></script> 
+  </body> -->
+  <br />
+  <a href="/"> <button>Back</button></a>
+  <script src="script.js"></script>
 </html>
+<%- include("./partials/footer.ejs")%>

@@ -1,12 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="afar.css" />
-    <title>Document</title>
-  </head>
+   <%- include("./partials/head.ejs")%>
+  <%- include("./partials/nav.ejs")%>
+   
   <body>
     <div class="topography">
       <p>
@@ -27,6 +23,7 @@ Before the year 1000 AD, the Afar people appear to have settled in the Ethiopian
       </p>
     </div>
   </body>
-  <!-- <a href="/afar">view more</a>  -->
-      <a href="/">Home</a>
+ 
+      <a href="/"> <button>Back</button></a>
 </html>
+ <%- include("./partials/footer.ejs")%>
