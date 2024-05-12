@@ -1,46 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+  <h1 class="heading">EthnoEthiopia</h1>
   <%- include("./partials/head.ejs")%> <%- include("./partials/nav.ejs")%>
-  <!-- <body>
-    <h1>content contribution page</h1>
+<div class ="all"> 
+   <body>
+    <div class ="page"> 
+    <h1 class = "content">Content Contribution page</h1>
+    <br>
+    <br>
     <div class="user">
-    <form action="form" method="x">
-  
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="user_name" /><br/>
-      <br/>
-      <label for="mail">Email:</label>
-      <input type="email" id="mail" name="user_email" /><br />
-      <br/>
    
-      <label for="nationality">Ethnicity:</label>
-       <select id="ethnicity" name="user_ethnicity" required>   <br/>
-       <br/>
-      
-            <option value="usa">Amhara</option>
-            <option value="canada">Oromo</option>
-            <option value="uk">Tigray</option>
-            <option value="usa">Afar</option>
-            <option value="usa">somalia</option>
-            <option value="usa">wolayta</option>
-            <option value="usa">snnpr</option>
-            <option value="usa">gambella</option>
-            <option value="usa">gurage</option><br/>
-             </select><br/>
-       
-      <br/>
-
-      <label for="msg">Message:</label>
-      <textarea id="msg" name="user_message"></textarea><br />
-      <br />
-        <a href="receive.html"><button>submit</button></a>
+  
+      <div class="create-blog content">
+     <form action="/blogs" method="POST">
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" required>
+      <label for="snippet">Subject:</label>
+      <input type="text" id="snippet" name="snippet" required>
+      <label for="body"> Body:</label>
+      <textarea id="body" name="body" required></textarea>
+      <button>Submit</button>
+    </form>
+  </div>
+        
        
         </div>
-    
+        </div>
+      <a href="/"> <div class="button">Back</div></a>
 
-  </body> -->
+  </body> 
+  <%- include("./partials/footer.ejs")%>
+  </div>
   <br />
-  <a href="/"> <button>Back</button></a>
-  <script src="script.js"></script>
+
+  <!-- <script src="script.js"></script> -->
 </html>
-<%- include("./partials/footer.ejs")%>
+
