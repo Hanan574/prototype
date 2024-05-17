@@ -111,10 +111,6 @@ app.get("/login", (req, res) => {
   res.render("login", { title: "login" });
 });
 
-//blog routes
-// app.get("/blogs/contribute", (req, res) => {
-//   res.render("contribute", { title: "Create a new blog" });
-// });
 
 app.post("/blogs", (req, res)=> {
   const blog = new Blog(req.body);
@@ -128,17 +124,6 @@ app.post("/blogs", (req, res)=> {
   })
 })
 
-// app.get('/blogs/:id', (req, res) => {
-//   const id = req.params.id;
-//   Blog.findById(id)
-//     .then(result => {
-//       res.render('details', { blog: result, title: 'Blog Details' });
-//     })
-//     .catch(err => {
-//       console.log(err);
-//     });
-// })
-
 
 app.get("/blogs", (req, res) => {
   Blog.find()
@@ -151,11 +136,6 @@ app.get("/blogs", (req, res) => {
     });
 });
 
-// 404 page
-// app.use((req, res) => {
-//   res.status(404).render('404', { title: '404' });
-// });
-
 
 
 
@@ -163,7 +143,7 @@ app.get("/blogs", (req, res) => {
 app.get('/blogs/:id', (req, res) => {
   const id = req.params.id;
 
-  // Check if id is a valid ObjectId
+  
   if (!mongoose.Types.ObjectId.isValid(id)) {
     return res.status(400).send('Invalid blog id');
   }
@@ -178,5 +158,16 @@ app.get('/blogs/:id', (req, res) => {
     .catch(err => {
       console.log(err);
       res.status(500).send('Internal Server Error');
+    });
+});
+app.delete('/blogs/:id', (req, res) => {
+  const id = req.params.id;
+  
+  Blog.findByIdAndDelete(id)
+    .then(result => {
+      res.json({ redirect: '/blogs' });
+    })
+    .catch(err => {
+      console.log(err);
     });
 });

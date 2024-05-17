@@ -132,13 +132,7 @@ textarea {
 .h2 {
   padding-top: 40px;
 }
-.details {
-  position: relative;
-} 
-.delete {
-  position: absolute;
-  top: 0;
-  right: 0;
-  border-radius: 45%;
-  padding: 8px;
+
+.delete{
+  color:#006400;
 }
